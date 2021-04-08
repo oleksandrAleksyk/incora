@@ -37,7 +37,7 @@ class LogGroup{
             } else {
                 sessionStorage.setItem('user_logged_in', true);
             }
-            window.location.replace('/');
+            window.location.replace('/feed');
         })
     }
 
@@ -69,7 +69,7 @@ class LogGroup{
             } else {
                 sessionStorage.setItem('user_logged_in', true);
             }
-            window.location.replace('/');
+            window.location.replace('/feed');
         })
     }
 

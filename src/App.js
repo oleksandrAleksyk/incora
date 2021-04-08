@@ -4,13 +4,15 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Routes from './routes/routes'; 
 // importing components 
 import Navbar from './components/Navbar/navbar'; 
+// importing observer to reload if data change
+import {observer} from 'mobx-react';  
 
 function App() {
  
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar />      
 
         <Routes />
       </Router>
@@ -18,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default observer(App);
