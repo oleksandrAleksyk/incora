@@ -14,7 +14,7 @@ const RenderFeed = (props)=>{
     return(
         <div>
         {props.nytFeed.map((item)=>{
-            return (<><h4>{item.title}</h4> {item.published_date}</>)
+            return (<div><a href={item.url} target="_blank" rel="noreferrer" ><h4>{item.title}</h4> {item.published_date}</a></div>)
         })}
         </div>
     )
