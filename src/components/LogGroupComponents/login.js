@@ -1,7 +1,10 @@
 import {useState} from 'react';
 
+import {Link} from 'react-router-dom';
+
 import LogGroup from '../LogGroupComponents/logGroupStore/logGroup'; 
 
+import '../../style/css/log-form.css';
 
 export default function Login(props){ 
     let [login,setLogin] = useState(""); 
@@ -19,14 +22,15 @@ export default function Login(props){
             <label>Password</label>
             <input type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}} />
 
+            <div>
             <input name="on" type="checkbox" checked={saveState} 
             onChange={(e)=>{setSaveState(e.target.value=e.target.type ==='checkbox'?e.target.checked:e.target.value)}}/>  
             <label >Remember me</label>   
-
+            </div>
 
             <button onClick={()=>{LogGroup.Login(login,password,saveState)}}>Login</button>
             
-            <h5>Don`t have account <b>Register</b> new one</h5>
+            <h5>Don`t have account <Link to="/sign-in">Register</Link> new one</h5>
 
             <a href="/">Back to main Page</a>
         </div>

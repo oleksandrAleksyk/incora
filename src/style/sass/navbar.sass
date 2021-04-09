@@ -1,4 +1,5 @@
 @import './color'
+@import './fonts'
 .navbar
     width: 100%
     height: 10vh
@@ -16,14 +17,21 @@
     color: $font-color
 
     border-bottom: 1px solid black
+
+    font-family: $font-familly  
     a 
         color: $font-color 
         
         margin: 15px
+        padding: 15px 
         
         text-decoration: none
-        font-size: x-large
+        font-size: large
         &:link
             color: $font-color
         &:visited
             color: $font-color
+        &:hover
+            background-color: invert($primary-color)
+            color: invert($font-color)
+    

@@ -1,4 +1,5 @@
 @import './color'
+@import './fonts'
 .feed
     width: 100%
     height: 89vh
@@ -6,6 +7,7 @@
     background-color: $primary-color
     border-top: 2px solid black
 
+    font-family: $font-familly
     position: absolute
     top: 10vh
     left: 0
@@ -19,6 +21,38 @@
                 font-size: large
                 text-decoration: none
                 color: $font-color
+    .feed-list
+        margin-left: 25px
+        border-bottom: 1px solid black 
+        a
+            margin-left: 25px 
+            color: black
+            &:link
+                color: black
+            &:visited
+                color: black
+            &:hover
+                text-decoration: underline
+    .manage
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            height: 25%
+            text-align: left
+            label                
+                text-align: left
+              
+
 
     .invisible
         display: none
+    a
+        text-decoration: none
+        padding: 15px
+        color: black
+        &:link
+            color: black
+        &:visited
+            color: black

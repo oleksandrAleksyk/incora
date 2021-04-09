@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.main-placeholder {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  padding-top: 15vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  transition: 1s;
+}
+.main-placeholder:hover {
+  background-color: black;
+  color: white;
+}
+.main-placeholder a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+}
+.main-placeholder a:link {
+  color: inherit;
+}
+.main-placeholder a:visited {
+  color: inherit;
+}
+.main-placeholder a:hover {
+  background-color: white;
+  color: black;
+}
+
+/*# sourceMappingURL=placeholder.css.map */

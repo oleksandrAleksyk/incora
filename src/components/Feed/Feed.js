@@ -27,6 +27,7 @@ function Feed(){
             <li className={visibillity.nyt?"visible":"invisible"}><Link to="/feed/nyt">New Yourk Times</Link></li>
         </ul>
         <Link to="/feed/manage">Manage</Link>
+        
         <Switch>
             <Route path={`${path}/nyt`}>
                 <NytFeed state={USER_LOGGED_IN}/>

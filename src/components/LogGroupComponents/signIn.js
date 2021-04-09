@@ -2,6 +2,7 @@ import {useState} from 'react';
 
 import LogGroup from '../LogGroupComponents/logGroupStore/logGroup'; 
 
+import {Link} from 'react-router-dom';
 
 export default function SignIn(props){ 
     let [login,setLogin] = useState(""); 
@@ -19,14 +20,15 @@ export default function SignIn(props){
             <label>Password</label>
             <input type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}} />
 
+            <div>
             <input name="on" type="checkbox" checked={saveState} 
             onChange={(e)=>{setSaveState(e.target.value=e.target.type ==='checkbox'?e.target.checked:e.target.value)}}/>  
             <label >Remember me</label>   
-
+            </div>
 
             <button onClick={()=>{LogGroup.SignIn(login,password,saveState)}}>Login</button>
             
-            <h5>Don`t have account <b>Log In</b> new one</h5>
+            <h5>Don`t have account <Link to="/login">Log In</Link> new one</h5>
 
             <a href="/">Back to main Page</a>
         </div>

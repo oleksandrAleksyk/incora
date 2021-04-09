@@ -4,6 +4,7 @@ import Feed from '../components/Feed/Feed';
 import Login from '../components/LogGroupComponents/login';
 import Logout from '../components/LogGroupComponents/logout';
 import SignIn from '../components/LogGroupComponents/signIn'; 
+import MainPagePlaceholder from '../components/MainPagePlaceholder/mainPagePlaceholder';
 
 export default function Routes(){
     return(
@@ -20,6 +21,10 @@ export default function Routes(){
             </Route>
             <Route path='/logout'>
                 <Logout/>
+            </Route>
+
+            <Route path='/'>
+                <MainPagePlaceholder />
             </Route>
         </Switch>
         </>

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 .feed {
   width: 100%;
   height: 89vh;
   background-color: #ffffff;
   border-top: 2px solid black;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   top: 10vh;
   left: 0;
@@ -20,8 +22,49 @@
   text-decoration: none;
   color: #000000;
 }
+.feed .feed-list {
+  margin-left: 25px;
+  border-bottom: 1px solid black;
+}
+.feed .feed-list a {
+  margin-left: 25px;
+  color: black;
+}
+.feed .feed-list a:link {
+  color: black;
+}
+.feed .feed-list a:visited {
+  color: black;
+}
+.feed .feed-list a:hover {
+  text-decoration: underline;
+}
+.feed .manage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feed .manage div {
+  height: 25%;
+  text-align: left;
+}
+.feed .manage div label {
+  text-align: left;
+}
 .feed .invisible {
   display: none;
+}
+.feed a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+}
+.feed a:link {
+  color: black;
+}
+.feed a:visited {
+  color: black;
 }
 
 /*# sourceMappingURL=feed.css.map */

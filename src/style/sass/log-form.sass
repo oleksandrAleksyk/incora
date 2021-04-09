@@ -1,0 +1,63 @@
+@import './fonts'
+@import './color'
+.log-form
+    width: 50%
+    height: 90vh
+
+    position: absolute
+    top: 10vh
+    left: 25%
+
+    font-family: $font-familly
+
+    display: flex
+    flex-direction: column
+    h1
+        text-transform: uppercase
+        border-right: 3px solid black
+    label
+        text-align: left
+        font-weight: 700
+        padding-left: 25px
+    input
+        height: 25px
+        padding-left: 25px
+        border-radius: 25px
+        border: 2px solid black
+        outline: none !important
+    div
+        display: flex
+        flex-direction: row
+        align-items: center
+        height: 50px
+    button
+        background-color: white
+        border: 2px solid black
+        padding: 5px
+        outline: none
+        color: black
+        font-size: large
+        transition: 0.5s
+        &:hover
+            background-color: black
+            color: white
+    h5
+        font-weight: 500
+        font-size: medium
+        a
+            color: black
+            text-decoration: underline
+            text-transform: uppercase
+            &:link
+                color: black
+            &:visited
+                color: black
+    a
+        color: black
+        text-decoration: underline
+        text-transform: uppercase
+        text-align: center
+        &:link
+            color: black
+            &:visited
+                color: black

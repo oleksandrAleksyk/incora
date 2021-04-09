@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.log-form {
+  width: 50%;
+  height: 90vh;
+  position: absolute;
+  top: 10vh;
+  left: 25%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.log-form h1 {
+  text-transform: uppercase;
+  border-right: 3px solid black;
+}
+.log-form label {
+  text-align: left;
+  font-weight: 700;
+  padding-left: 25px;
+}
+.log-form input {
+  height: 25px;
+  padding-left: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  outline: none !important;
+}
+.log-form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+.log-form button {
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px;
+  outline: none;
+  color: black;
+  font-size: large;
+  transition: 0.5s;
+}
+.log-form button:hover {
+  background-color: black;
+  color: white;
+}
+.log-form h5 {
+  font-weight: 500;
+  font-size: medium;
+}
+.log-form h5 a {
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.log-form h5 a:link {
+  color: black;
+}
+.log-form h5 a:visited {
+  color: black;
+}
+.log-form a {
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+.log-form a:link {
+  color: black;
+}
+.log-form a:link:visited {
+  color: black;
+}
+
+/*# sourceMappingURL=log-form.css.map */
